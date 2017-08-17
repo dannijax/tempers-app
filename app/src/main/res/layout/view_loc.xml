@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnCity"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_btn_small"
+        android:text="City"
+        android:textAllCaps="false"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:gravity="center"
+        android:layout_marginRight="6dp"
+        android:stateListAnimator="@null"
+        android:textColor="@color/grey_text"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnDistance"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_btn_small"
+        android:text="Distance"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:stateListAnimator="@null"
+        android:textAllCaps="false"
+        android:layout_marginLeft="6dp"
+        android:textColor="@color/grey_text"
+        android:textSize="14sp" />
+
+</LinearLayout>

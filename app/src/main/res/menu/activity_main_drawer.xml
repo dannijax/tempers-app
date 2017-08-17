@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navHome"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/navProfile"
+            android:icon="@drawable/ic_person"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/navNotif"
+            android:icon="@drawable/ic_notifications"
+            android:title="@string/notif" />
+        <item
+            android:id="@+id/navSearch"
+            android:icon="@drawable/ic_search"
+            android:title="@string/search" />
+
+        <item
+            android:id="@+id/navInbox"
+            android:icon="@drawable/ic_email"
+            android:title="@string/inbox" />
+
+    </group>
+
+    <group
+        android:checkableBehavior="all"
+        >
+        <item
+            android:id="@+id/navSetting"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/action_settings"
+            />
+
+        <item
+            android:id="@+id/navLogOut"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/logout"
+            />
+
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

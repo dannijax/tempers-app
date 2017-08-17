@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <chapters.ui.view.ViewToolbar
+        android:id="@+id/viewToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleToolbar="@string/setting" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <chapters.ui.view.ViewSingleSelect
+                android:id="@+id/viewAllowMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconHideSingle="true"
+                app:iconSelectSingle="@drawable/ic_calendar"
+                app:titleSelectSingle="Allow Messages" />
+
+            <chapters.ui.view.ViewSingleSelect
+                android:id="@+id/viewAllowTags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconHideSingle="true"
+                app:iconSelectSingle="@drawable/ic_calendar"
+                app:titleSelectSingle="Allow Tags" />
+
+
+            <chapters.ui.view.ViewSwitcher
+                android:id="@+id/vsFollower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleSwitcher="New followers" />
+
+            <chapters.ui.view.ViewSwitcher
+                android:id="@+id/vsStar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleSwitcher="New stars" />
+
+            <chapters.ui.view.ViewSwitcher
+                android:id="@+id/vsRetemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleSwitcher="New re-temps" />
+
+            <chapters.ui.view.ViewSwitcher
+                android:id="@+id/vsNewTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleSwitcher="New tags" />
+
+            <chapters.ui.view.ViewSwitcher
+                android:id="@+id/vsTagStar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleSwitcher="Tagged post star’d" />
+
+            <chapters.ui.view.ViewSwitcher
+                android:id="@+id/vsVanish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleSwitcher="Disappearing posts" />
+
+            <chapters.ui.view.ViewSwitcher
+                android:id="@+id/vsJoin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleSwitcher="Contact joins Tempry" />
+
+            <chapters.ui.view.ViewSwitcher
+                android:id="@+id/vsMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleSwitcher="New messages" />
+
+            <chapters.ui.view.ViewSwitcher
+                android:id="@+id/vsRecomendation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleSwitcher="Recommendation" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

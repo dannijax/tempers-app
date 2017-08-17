@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <chapters.ui.view.ViewToolbar
+        android:id="@+id/viewToolbar"
+        android:layout_width="match_parent"
+        app:titleToolbar="@string/registration"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnReg"
+        android:layout_below="@+id/viewToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_middle"
+                android:divider="@drawable/divider_vertical"
+                android:orientation="vertical"
+                android:showDividers="middle"
+                tools:visibility="gone">
+
+                <chapters.ui.view.ViewItemEdit
+                    android:id="@+id/viewFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorText="Min lenth name 2 symbols"
+                    app:hintItem="@string/firsName" />
+
+                <chapters.ui.view.ViewItemEdit
+                    android:id="@+id/viewLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorText="Min lenth lastname 2 symbols"
+                    app:hintItem="@string/lastName" />
+
+            </LinearLayout>
+
+            <chapters.ui.view.ViewItemEdit
+                android:id="@+id/viewUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_middle"
+                app:errorText="Min lenth username 2 symbols"
+                app:hintItem="@string/userName"
+                tools:visibility="gone" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/middle_margin"
+                android:text="@string/a_z_0_9_or_underscores"
+                tools:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:divider="@drawable/divider_vertical"
+                android:orientation="vertical"
+                android:showDividers="middle"
+                tools:visibility="gone">
+
+                <chapters.ui.view.ViewItemEdit
+                    android:id="@+id/viewEmal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorText="@string/email_not_valid"
+                    app:hintItem="@string/email" />
+
+                <chapters.ui.view.ViewItemEdit
+                    android:id="@+id/viewConfirmEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorText="Email not confirmed"
+                    app:hintItem="@string/confirm_email" />
+            </LinearLayout>
+
+            <chapters.ui.view.ViewItemEdit
+                android:id="@+id/viewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_middle"
+                app:errorText="Password needs to be more complex"
+                app:hintItem="@string/password"
+                app:isPassword="true"
+                tools:visibility="gone" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/middle_margin"
+                android:text="@string/should_have_at_least"
+                tools:visibility="gone" />
+
+            <chapters.ui.view.ViewItemEdit
+                android:id="@+id/viewDateBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                app:enableEnter="false"
+                app:hintItem="@string/date_birthday"
+                app:onlySee="true"
+                tools:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_middle"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                tools:visibility="gone">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/viewCodePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_centerVertical="true" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/viewCodePicker"
+                    android:hint="@string/phone" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvPhoneInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/middle_margin"
+                android:text="@string/number_info"
+                tools:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_vertical_margin">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/cbAgree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvRegInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/cbAgree"
+                    android:gravity="center|left"
+                    android:paddingBottom="@dimen/middle_margin"
+                    android:paddingTop="@dimen/middle_margin"
+                    android:text="By tapping checkbox the checkbox, you agree to our Terms of Service and consent than you have read our Privacy Policy"
+                    android:textSize="@dimen/font_15" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/widht_indicator"
+                android:background="@color/transparent" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/join_now"
+        />
+</RelativeLayout>

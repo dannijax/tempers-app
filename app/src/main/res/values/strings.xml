@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Tempry</string>
+    <string name="place_api">AIzaSyB9NXKMs8jWl6B1HosOO9juC4X7BdWtG9A</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="internet_con_lost">no internet connection</string>
+    <string name="retry">retry</string>
+    <string name="camera">camera</string>
+    <string name="gallery">gallery</string>
+    <string name="please_select">Please select</string>
+    <string name="please_wait">Please wait</string>
+    <string name="firsName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="userName">Your Username</string>
+    <string name="email">Your Email</string>
+    <string name="confirm_email">Confirm Your Email</string>
+    <string name="password">Your Password</string>
+    <string name="a_z_0_9_or_underscores">A-Z, 0-9 or underscores.</string>
+    <string name="should_have_at_least">Should have at least 6 characters and at least 1 number
+        or symbol</string>
+    <string name="date_birthday">Your Date of Birth</string>
+    <string name="phone">Your Phone</string>
+    <string name="number_info">Your phone number needs to have at least %d digits</string>
+    <string name="reg_info"><![CDATA[<p style="text-align: left;">By tapping checkbox the checkbox, you agree to our <span style="color: #ff9900;"><a style="color: #ff9900;" href="google.com">Terms of Service</a></span>&nbsp;and consent than you have read our&nbsp;<span style="color: #ff9900;"><a style="color: #ff9900;" href="google.com">Privacy Policy</a></span></p>]]></string>
+    <string name="reg_info2">By tapping the checkbox, you agree to our Terms of Service and consent than you have read our Privacy Policy"</string>
+    <string name="join_now">Join now</string>
+    <string name="not_validate">Please complete all fields</string>
+    <string name="error_reg">The %s is already taken</string>
+    <string name="error_log">The account is $s</string>
+    <string name="email_not_valid">Email not valid</string>
+    <string name="reset_password">reset password</string>
+    <string name="date_info_reset">Type the date you used to register on Tempry.</string>
+    <string name="email_info_reset">Type the e-mail address you used to register on Tempry.</string>
+    <string name="password_reset">Check new password in email</string>
+    <string name="wrong_reset">Wrong credentials. The email/ birthday combination is wrong.</string>
+    <string name="wrong_login">Wrong credentials. The username/ password combination is wrong.</string>
+    <string name="dublicate_reset">There has been already a password request in the last 60 minutes.</string>
+    <string name="info_2">2.Share and post anything and everything</string>
+    <string name="info_3">3.Follow friends, celebrities and public figures.</string>
+    <string name="info_1"><![CDATA[<pre><span style="color: #ffffff;">1.Join for <strong>free</strong> and create an account</span></pre>]]></string>
+    <string name="ltd_info">\u00A92017 Tempry Ltd.</string>
+    <string name="sing_up">sign up</string>
+    <string name="login">login</string>
+    <string name="log_in">Log in</string>
+    <string name="app_info">Share updates for 24 hours, no more, no less. The catch? you can`t delete ANYTHING</string>
+    <string name="no_account">No Account?\u0020</string>
+    <string name="click_here">Click here\u0020</string>
+    <string name="to_get_started">to get started</string>
+    <string name="to_reset_it"> to reset it</string>
+    <string name="forgoten_password">Forgot your password?\u0020</string>
+    <string name="welcome">Welcome %s</string>
+    <string name="welcome_info">In Order to fully enjoy Tempry, you need to be connected. Please, grant us access to our address book contacts and we will show you people to follow</string>
+    <string name="skip">Skip this For Now</string>
+    <string name="grant_access">Ok, grant contacts access</string>
+    <string name="welcome_name">Welcome %s</string>
+    <string name="people_to_follow">People to follow</string>
+    <string name="people_info">We found these people to follow based upon your address book.</string>
+    <string name="count_st">%d Stars</string>
+    <string name="count_post">%d Posts</string>
+    <string name="hourse_24">24 Hours, That\'s all</string>
+
+    <string name="internal_storage">dg</string>
+    <string name="error_selecting_file">df</string>
+    <string name="storage_removed">df</string>
+    <string name="empty_directory">dfdf</string>
+
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="notif">Notifications</string>
+    <string name="search">Search</string>
+    <string name="inbox">Inbox</string>
+    <string name="no_post">There aren\'t any posts here</string>
+    <string name="followers">Followers</string>
+    <string name="star">Stars</string>
+    <string name="post">Posts</string>
+    <string name="following">Following</string>
+    <string name="edit">Edit</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="brief_bio">Brief bio</string>
+    <string name="registration">Sign-up</string>
+    <string name="message">Message</string>
+    <string name="remove">Unfollow</string>
+    <string name="logout">Logout</string>
+    <string name="report">Report</string>
+    <string name="send_message">Your message</string>
+    <string name="follow">+ follow</string>
+    <string name="setting">Settings</string>
+    <string name="terminate_account">Terminate account</string>
+    <string name="change_password">Change password</string>
+    <string name="change_email">Change email</string>
+    <string name="change_phone">Сhange phone</string>
+    <string name="submit">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="nothing">Nothing</string>
+    <string name="user_has_reg">This username or email now registr</string>
+    <string name="banned">Your account has been temporarily banned due to violation of terms of use. Please ensure you follow these guidelines in future to avoid a permanent ban. You will be allowed to access your account again in %s days. For more information please contact support@tempry.com</string>
+</resources>

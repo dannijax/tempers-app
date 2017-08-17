@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainRl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="54dp"
+        android:layout_height="54dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:layout_alignParentBottom="true"
+            tools:tint="@color/blue" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/rl"
+        android:paddingTop="@dimen/middle_margin2">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextSmallDefault"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textColor="@color/colorAccent"
+            tools:text="Стан поля" />
+        <com.tempry.MultiSelectionSpinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginLeft="@dimen/middle_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            tools:text="Стан поля" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@+id/spinner"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/middle_margin"
+            android:background="@color/divider"
+            android:layout_height="2dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

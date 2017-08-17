@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:id="@+id/llShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/middle_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/grey_text"
+            app:srcCompat="@drawable/ic_share" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/middle_margin"
+            android:text="Retemp"
+            android:textAppearance="@style/TextSmallDefault"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/llShare">
+
+        <ToggleButton
+            android:id="@+id/btnStars"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@null"
+            android:button="@drawable/selector_toggle_star"
+            android:duplicateParentState="true"
+            android:textOff=""
+            android:textOn=""
+            android:tint="@color/grey_text"
+
+            app:srcCompat="@drawable/ic_star" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/middle_margin"
+            android:text="2016"
+            android:textAppearance="@style/TextSmallDefault"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivMore"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+
+        app:srcCompat="@drawable/ic_more" />
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <chapters.ui.view.ViewToolbar
+        android:id="@+id/viewToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleToolbar="@string/edit_profile" />
+
+    <LinearLayout
+        android:id="@+id/rlProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/profile_photo_size"
+            android:layout_height="@dimen/profile_photo_size"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_person"
+            tools:tint="@color/orange" />
+
+        <LinearLayout
+            android:id="@+id/llchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ivChangePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_change" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/small_margin"
+                android:text="Change photo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_15" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="@dimen/middle_margin"
+            android:background="@drawable/shape_shadow" />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/middle_margin"
+            android:background="@color/white"
+            android:divider="@drawable/view_divider_ver"
+            android:orientation="vertical"
+            android:showDividers="middle|end">
+
+            <chapters.ui.view.ViewItemEdit
+                android:id="@+id/viewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintItem="@string/firsName" />
+
+            <chapters.ui.view.ViewItemEdit
+                android:id="@+id/viewSurName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintItem="@string/lastName" />
+
+            <chapters.ui.view.ViewItemEdit
+                android:id="@+id/viewDateBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:enableEnter="false"
+                app:hintItem="@string/date_birthday" />
+
+            <chapters.ui.view.ViewItemEdit
+                android:id="@+id/viewInfoUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintItem="@string/brief_bio" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="@string/change_password" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnChangePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="@string/change_phone" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnChangeEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="@string/change_email" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnTerminate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:text="@string/terminate_account" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "416587798121",
+    "firebase_url": "https://tempry-165511.firebaseio.com",
+    "project_id": "tempry-165511",
+    "storage_bucket": "tempry-165511.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416587798121:android:9c6f1b1b94f02e52",
+        "android_client_info": {
+          "package_name": "com.tempry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416587798121-7eur3fsi3o75ld19fv9ddfga934i9mgv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tempry",
+            "certificate_hash": "b9b6e2a2dac292b4e971964d19819350326ee4d3"
+          }
+        },
+        {
+          "client_id": "416587798121-7luk7a2idmvcff3997lu41851bjborgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUyTLoQ3blzV4amVaNuDPRblKuGvuFrWo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416587798121-7luk7a2idmvcff3997lu41851bjborgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

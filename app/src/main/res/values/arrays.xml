@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="email">
+        <item>hh.com</item>
+    </string-array>
+
+    <string-array name="distance">
+        <item>10 km</item>
+        <item>25 km</item>
+        <item>50 km</item>
+        <item>100 km</item>
+    </string-array>
+
+    <string-array name="bottom">
+        <item>Report post </item>
+        <item>Un follow</item>
+    </string-array>
+
+    <string-array name="bottomVideo">
+        <item>Report post </item>
+        <item>Un follow</item>
+        <item>Save video</item>
+    </string-array>
+
+    <string-array name="bottomImage">
+        <item>Report post </item>
+        <item>Un follow</item>
+        <item>Save image</item>
+    </string-array>
+</resources>

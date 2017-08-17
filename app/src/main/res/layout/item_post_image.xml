@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/middle_margin"
+    android:orientation="vertical">
+
+    <im.ene.toro.exoplayer2.ExoPlayerView
+        android:id="@+id/videoView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:use_controller="false" />
+
+    <chapters.ui.view.ViewUserPost
+        android:id="@+id/viewUserPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:paddingTop="@dimen/middle_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/middle_margin"
+        android:textAppearance="@style/TextSmallDefault" />
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_content_post"
+        android:scaleType="centerCrop" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/middle_margin"
+        android:paddingTop="@dimen/middle_margin" />
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivCam"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:scaleType="center"
+        app:srcCompat="@drawable/ic_videocam" />
+
+    <chapters.ui.view.ViewBottomPost
+        android:id="@+id/viewBottomPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/middle_margin" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_shadow"
+        android:layout_height="4dp"/>
+
+
+</LinearLayout>

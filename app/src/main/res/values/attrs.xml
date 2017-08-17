@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ViewItemEdit">
+        <attr name="hintItem" format="string" />
+        <attr name="iconItem" format="integer" />
+        <attr name="android:imeOptions" />
+        <attr name="android:inputType" />
+        <attr name="isPassword" format="boolean" />
+        <attr name="enableEnter" format="boolean" />
+        <attr name="onlySee" format="boolean" />
+        <attr name="phone" format="boolean" />
+        <attr name="errorText" format="string" />
+        <attr name="ignoreChangeColor" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ViewInfoItem">
+        <attr name="nameInfo" format="string"/>
+        <attr name="iconInfo" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ViewToolbar">
+        <attr name="titleToolbar" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ViewSwitcher">
+        <attr name="titleSwitcher" format="string" />
+        <attr name="infoSwitcher" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ViewSingleSelect">
+        <attr name="titleSelectSingle" format="string" />
+        <attr name="iconSelectSingle" format="integer" />
+        <attr name="iconHideSingle" format="boolean" />
+    </declare-styleable>
+
+
+
+</resources>

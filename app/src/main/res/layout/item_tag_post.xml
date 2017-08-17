@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/transparent"
+    android:padding="4dp"
+    android:layout_height="wrap_content">
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:text="Mila Youvovich"
+        android:background="@drawable/shape_grey"
+        android:paddingRight="12dp"
+        android:paddingLeft="24dp"
+        android:layout_marginLeft="14dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="34dp"
+        app:srcCompat="@drawable/ic_add"
+        android:layout_centerVertical="true"
+        tools:tint="@color/black"
+        android:scaleType="centerCrop"
+        android:layout_height="34dp" />
+
+
+</RelativeLayout>

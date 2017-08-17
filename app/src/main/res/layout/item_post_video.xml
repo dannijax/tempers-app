@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/middle_margin"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <chapters.ui.view.ViewUserPost
+        android:id="@+id/viewUserPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:paddingBottom="@dimen/middle_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/middle_margin"
+        android:textAppearance="@style/TextSmallDefault" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_content_post">
+
+
+        <im.ene.toro.exoplayer2.ExoPlayerView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:use_controller="false" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivPlaceHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivCam"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_videocam" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            tools:background="@color/blueDark">
+
+            <ProgressBar
+                android:id="@+id/pbLoad"
+                android:layout_width="36dp"
+                android:visibility="invisible"
+                android:layout_height="36dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/ivFullScreen"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/ic_zoom"
+            android:layout_alignParentRight="true"
+            android:tint="@color/orange"
+            android:padding="@dimen/middle_margin"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/middle_margin"
+        android:paddingTop="@dimen/middle_margin" />
+
+
+    <chapters.ui.view.ViewBottomPost
+        android:id="@+id/viewBottomPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/middle_margin" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/shape_shadow" />
+
+
+</LinearLayout>

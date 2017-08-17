@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+   android:id="@+id/cl"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rlProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height_profile"
+            android:background="@color/white"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="@dimen/profile_photo_size"
+                android:layout_height="@dimen/profile_photo_size"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_person"
+                tools:tint="@color/orange" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivProfile"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                tools:text="Вова Кропивко"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_15" />
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <chapters.ui.view.ViewInfoItem
+                        android:id="@+id/viewFollowers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:iconInfo="@drawable/ic_followers"
+                        app:nameInfo="@string/followers">
+
+                    </chapters.ui.view.ViewInfoItem>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <chapters.ui.view.ViewInfoItem
+                        android:id="@+id/viewFollowing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:iconInfo="@drawable/ic_following"
+                        app:nameInfo="@string/following">
+
+                    </chapters.ui.view.ViewInfoItem>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <chapters.ui.view.ViewInfoItem
+                        android:id="@+id/viewStar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:nameInfo="@string/star"
+                        android:layout_centerInParent="true"
+                        app:iconInfo="@drawable/ic_star">
+
+                    </chapters.ui.view.ViewInfoItem>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <chapters.ui.view.ViewInfoItem
+                        android:id="@+id/viewPost"
+                        android:layout_width="wrap_content"
+                        app:nameInfo="@string/post"
+                        app:iconInfo="@drawable/ic_post"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                    </chapters.ui.view.ViewInfoItem>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvBio"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ll"
+                android:text="dsgdfdsfsdfsd"
+                android:padding="@dimen/middle_margin"
+                android:textSize="@dimen/font_15"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@+id/tvBio"
+                android:layout_marginTop="@dimen/middle_margin"
+                android:background="@drawable/shape_shadow" />
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvPost"
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/llEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="@dimen/big_space"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_empty_post" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_et_image"
+            android:gravity="center"
+            android:text="@string/no_post"
+            android:textSize="@dimen/font_13" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAddPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:layout_gravity="end|bottom"
+        app:srcCompat="@drawable/ic_add"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        app:useCompatPadding="true" />
+
+</android.support.design.widget.CoordinatorLayout>

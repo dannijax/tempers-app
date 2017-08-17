@@ -1,0 +1,28 @@
+<tabs>
+
+    <tab
+        icon="@drawable/ic_home"
+        id="@+id/tabHome"
+        title="@string/home" />
+
+    <tab
+        icon="@drawable/ic_person"
+        id="@+id/tabProfile"
+        title="@string/profile" />
+
+
+    <tab
+        icon="@drawable/ic_notifications"
+        id="@+id/tabNotif"
+        title="@string/notif" />
+
+
+    <tab
+        icon="@drawable/ic_search"
+        id="@+id/tabSearch"
+        title="@string/search" />
+    <tab
+        icon="@drawable/ic_mail2"
+        id="@+id/tabInbox"
+        title="@string/inbox" />
+</tabs>
